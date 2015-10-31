@@ -1,5 +1,6 @@
 <?php
 session_start();
+$err = null;
 if(isset($_POST['register'])){
   require_once('../model/process_reg.php');
 }
@@ -42,6 +43,7 @@ if(isset($_POST['register'])){
 <div class="w3-container w3-card-4">
   <form method="post" name="Registration-Form"  enctype="multipart/form-data" action="#">
   <h2>Create Account</h2>
+  <?php if($err!=null){echo $err;} ?>
   <label>Full Name</label>
   <input class="w3-input" type="text" style="width:90%" name="Name">
   <label>Email</label>
