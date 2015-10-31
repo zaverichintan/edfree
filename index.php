@@ -175,6 +175,7 @@ if(isset($_GET['term'])){
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>	
+		<a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="website translator plugin" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script>
 	<div class="footer">
 		<h6>Disclaimer : </h6>
 		<p class="claim"> hack made @ InOut 2.0 <br> For educational purpose only , we made for helping out students in Rural India</p>
