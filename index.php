@@ -27,11 +27,10 @@ if(isset($_GET['term'])){
 	<div class="full">
 			<div class="menu">
 				<ul>
-					<li><a class="active" href="index.php"><i class="home"></i></a></li>
-					<li><a href="videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<li><a href="reviews.php"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
-					<li><a href="404.php"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
-					<li><a href="contact.php"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
+					<li><a class="active" href="../index.php"><i class="home"></i></a></li>
+					<li><a href="view_con/videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
+					<li><a href="view_con/reviews.php"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
+					<li><a href="view_con/contact.php"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
 				</ul>
 			</div>
 		<div class="main">
@@ -54,7 +53,8 @@ if(isset($_GET['term'])){
 				<p class="tags"><a href="#">Tags:</a><?php echo 'Tags will display here'; ?></p>
 				<p class="review">Views	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  <?php echo 'view-count';?></p>
 				<p class="special"></p>
-				<a class="video" href="#"><i class="video1"></i>WATCH VIDEO</a>
+				<a class="video register" href="view_con/register.php"><i class="video1 reg"></i>Register</a>
+				<a class="video login" href="view_con/login.php"><i class="video1 log"></i>Login</a>
 			</div>
 		</div>
 		<div class="review-slider">
@@ -95,10 +95,10 @@ if(isset($_GET['term'])){
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>
-		<div class="video">
+		<!--<div class="video">
 			<iframe  src="https://www.youtube.com/embed/<?php echo'2LqzF5WauAw'; ?>" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<!--<div class="news">
+		<div class="news">
 			<div class="col-md-6 news-left-grid">
 				<h3>Don’t be late,</h3>
 				<h2>Book your ticket now!</h2>
