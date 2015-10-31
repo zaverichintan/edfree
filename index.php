@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_GET['term'])){
-	require_once('process_search.php');
+	require_once('model/process_search.php');
 }
 ?>
 
@@ -122,6 +122,12 @@ if(isset($_GET['term'])){
 			</div>
 			<div class="clearfix"></div>
 		</div>-->
+			 <?php 
+			 for($i=1; $i<6; $i++){
+			 	$imgUrl = 'images/r'.$i.'.jpg'; //getThumb function get here
+			echo '<li><img src="'.$imgUrl.'" alt="Thumbs"/></li>';			 	
+			 }
+			?>
 		<div class="more-reviews">
 			 <ul id="flexiselDemo2">
 			<li><img src="images/m1.jpg" alt=""/></li>
