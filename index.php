@@ -122,18 +122,15 @@ if(isset($_GET['term'])){
 			</div>
 			<div class="clearfix"></div>
 		</div>-->
+
+		<div class="more-reviews">
+			 <ul id="flexiselDemo2">
 			 <?php 
-			 for($i=1; $i<6; $i++){
-			 	$imgUrl = 'images/r'.$i.'.jpg'; //getThumb function get here
+			 for($i=1; $i<5; $i++){
+			 	$imgUrl = 'images/m'.$i.'.jpg'; //getThumb function get here
 			echo '<li><img src="'.$imgUrl.'" alt="Thumbs"/></li>';			 	
 			 }
 			?>
-		<div class="more-reviews">
-			 <ul id="flexiselDemo2">
-			<li><img src="images/m1.jpg" alt=""/></li>
-			<li><img src="images/m2.jpg" alt=""/></li>
-			<li><img src="images/m3.jpg" alt=""/></li>
-			<li><img src="images/m4.jpg" alt=""/></li>
 		</ul>
 			<script type="text/javascript">
 		$(window).load(function() {
