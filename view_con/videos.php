@@ -37,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="top-header span_top">
 				<div class="logo">
 					<a href="../index.php"><img src="../images/logo.png" alt="" /></a>
-					<p>Movie Theater</p>
+					<p>Educating India</p>
 				</div>
 				<div class="search v-search">
 					<form>

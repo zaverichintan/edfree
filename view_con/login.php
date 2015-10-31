@@ -31,7 +31,7 @@ if(isset($_POST['login'])){
 <div class="top-header">
 	<div class="logo">
 			<a href="../index.php"><img src="../images/logo.png" alt="" /></a>
-					<p>Curated Education</p>
+					<p>Educating India</p>
 	</div>
 				<div class="search" >
 					<form action="">

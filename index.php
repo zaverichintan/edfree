@@ -53,7 +53,7 @@ if(isset($_GET['term'])){
 			<div class="top-header">
 				<div class="logo">
 					<a href="index.php"><img src="images/logo.png" alt="" /></a>
-					<p>Curated Education</p>
+					<p>Educating India</p>
 				</div>
 				<div class="search" >
 					<form action="">
@@ -75,7 +75,7 @@ if(isset($_GET['term'])){
 			 <ul id="flexiselDemo1">
 			 <?php 
 			 for($i=1; $i<6; $i++){
-			 	$imgUrl = 'images/r'.$i.'.jpg'; //getThumb function get here
+			 	$imgUrl = getThumb();//getThumb function get here
 			echo '<li><img src="'.$imgUrl.'" alt="Thumbs"/></li>';			 	
 			 }
 			?>
@@ -109,72 +109,7 @@ if(isset($_GET['term'])){
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>
-		<!--<div class="video">
-			<iframe  src="https://www.youtube.com/embed/<?php echo'2LqzF5WauAw'; ?>" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<div class="news">
-			<div class="col-md-6 news-left-grid">
-				<h3>Don’t be late,</h3>
-				<h2>Book your ticket now!</h2>
-				<h4>Easy, simple & fast.</h4>
-				<a href="#"><i class="book"></i>BOOK TICKET</a>
-				<p>Get Discount up to <strong>10%</strong> if you are a member!</p>
-			</div>
-			<div class="col-md-6 news-right-grid">
-				<h3>News</h3>
-				<div class="news-grid">
-					<h5>Lorem Ipsum Dolor Sit Amet</h5>
-					<label>Nov 11 2014</label>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-				</div>
-				<div class="news-grid">
-					<h5>Lorem Ipsum Dolor Sit Amet</h5>
-					<label>Nov 11 2014</label>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-				</div>
-				<a class="more" href="#">MORE</a>
-			</div>
-			<div class="clearfix"></div>
-		</div>-->
 
-		<div class="more-reviews">
-			 <ul id="flexiselDemo2">
-			 <?php 
-			 for($i=1; $i<5; $i++){
-			 	$imgUrl = 'images/m'.$i.'.jpg'; //getThumb function get here
-			echo '<li><img src="'.$imgUrl.'" alt="Thumbs"/></li>';			 	
-			 }
-			?>
-		</ul>
-			<script type="text/javascript">
-		$(window).load(function() {
-			
-		  $("#flexiselDemo2").flexisel({
-				visibleItems: 4,
-				animationSpeed: 1000,
-				autoPlay: true,
-				autoPlaySpeed: 3000,    		
-				pauseOnHover: false,
-				enableResponsiveBreakpoints: true,
-				responsiveBreakpoints: { 
-					portrait: { 
-						changePoint:480,
-						visibleItems: 2
-					}, 
-					landscape: { 
-						changePoint:640,
-						visibleItems: 3
-					},
-					tablet: { 
-						changePoint:768,
-						visibleItems: 3
-					}
-				}
-			});
-			});
-		</script>
-		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
-		</div>	
 		<div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'></div><script type='text/javascript'>setTimeout(function(){{var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location && location.href && location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=Manual&from=';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); }},0);</script>
 	<div class="footer">
 		<h6>Disclaimer : </h6>
