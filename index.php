@@ -43,8 +43,8 @@ if(isset($_GET['term'])){
 				</div>
 				<div class="search" >
 					<form action="">
-						<input type="text" name="term" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>
-						<input type="submit" value="submit" >
+						<input type="text" name="term" placeholder="Search.."/>
+						<input type="submit" value="submit" />
 					</form>
 				</div>
 				<div class="clearfix"></div>
