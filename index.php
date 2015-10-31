@@ -51,23 +51,20 @@ if(isset($_GET['term'])){
 			</div>
 			<div class="header-info">
 				<h1>Top Viewed Video</h1>
-				<p class="tags"><a href="#">Tags:</a><?php echo 'Tags will display here'; ?>/p>
-				<p class="review">Rating	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  8,5/10</p>
-				<p class="review reviewgo">Genre	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Animation, Action, Comedy</p>
-				<p class="review">Release &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp; 7 November 2014</p>
-				<p class="special">The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.</p>
-				<a class="video" href="#"><i class="video1"></i>WATCH TRAILER</a>
-				<a class="book" href="#"><i class="book1"></i>BOOK TICKET</a>
+				<p class="tags"><a href="#">Tags:</a><?php echo 'Tags will display here'; ?></p>
+				<p class="review">Views	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  <?php echo 'view-count';?></p>
+				<p class="special"></p>
+				<a class="video" href="#"><i class="video1"></i>WATCH VIDEO</a>
 			</div>
 		</div>
 		<div class="review-slider">
 			 <ul id="flexiselDemo1">
-			<li><img src="images/r1.jpg" alt=""/></li>
-			<li><img src="images/r2.jpg" alt=""/></li>
-			<li><img src="images/r3.jpg" alt=""/></li>
-			<li><img src="images/r4.jpg" alt=""/></li>
-			<li><img src="images/r5.jpg" alt=""/></li>
-			<li><img src="images/r6.jpg" alt=""/></li>
+			 <?php 
+			 for($i=0;i<6;i++){
+			 	$imgUrl = images/r$i.jpg; //getThumb function get here
+			echo '<li><img src="$imgUrl" alt="Thumbs"/></li>';			 	
+			 }
+			?>
 		</ul>
 			<script type="text/javascript">
 		$(window).load(function() {
@@ -166,7 +163,7 @@ if(isset($_GET['term'])){
 		<p class="claim">This is a freebies and not an official website, I have no intention of disclose any movie, brand, news.My goal here is to train or excercise my skill and share this freebies.</p>
 		<a href="example@mail.com">example@mail.com</a>
 		<div class="copyright">
-			<p>Copyright<a href="http://w3layouts.com">&copy;W3layouts</a></p>
+			<p>Copyright<a href="#">&copy;EdFree</a></p>
 		</div>
 	</div>	
 	</div>
