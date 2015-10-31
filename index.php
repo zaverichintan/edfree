@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+if(isset($_GET['term'])){
+	require_once('model/process_search.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +13,7 @@ session_start();
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<script src="jsp/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -48,24 +50,21 @@ session_start();
 				<div class="clearfix"></div>
 			</div>
 			<div class="header-info">
-				<h1>BIG HERO 6</h1>
-				<p class="age"><a href="#">All Age</a> Don Hall, Chris Williams</p>
-				<p class="review">Rating	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  8,5/10</p>
-				<p class="review reviewgo">Genre	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Animation, Action, Comedy</p>
-				<p class="review">Release &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp; 7 November 2014</p>
-				<p class="special">The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.</p>
-				<a class="video" href="#"><i class="video1"></i>WATCH TRAILER</a>
-				<a class="book" href="#"><i class="book1"></i>BOOK TICKET</a>
+				<h1>Top Viewed Video</h1>
+				<p class="tags"><a href="#">Tags:</a><?php echo 'Tags will display here'; ?></p>
+				<p class="review">Views	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  <?php echo 'view-count';?></p>
+				<p class="special"></p>
+				<a class="video" href="#"><i class="video1"></i>WATCH VIDEO</a>
 			</div>
 		</div>
 		<div class="review-slider">
 			 <ul id="flexiselDemo1">
-			<li><img src="images/r1.jpg" alt=""/></li>
-			<li><img src="images/r2.jpg" alt=""/></li>
-			<li><img src="images/r3.jpg" alt=""/></li>
-			<li><img src="images/r4.jpg" alt=""/></li>
-			<li><img src="images/r5.jpg" alt=""/></li>
-			<li><img src="images/r6.jpg" alt=""/></li>
+			 <?php 
+			 for($i=1; $i<6; $i++){
+			 	$imgUrl = 'images/r'.$i.'.jpg'; //getThumb function get here
+			echo '<li><img src="'.$imgUrl.'" alt="Thumbs"/></li>';			 	
+			 }
+			?>
 		</ul>
 			<script type="text/javascript">
 		$(window).load(function() {
@@ -99,7 +98,7 @@ session_start();
 		<div class="video">
 			<iframe  src="https://www.youtube.com/embed/<?php echo'2LqzF5WauAw'; ?>" frameborder="0" allowfullscreen></iframe>
 		</div>
-		/*<div class="news">
+		<!--<div class="news">
 			<div class="col-md-6 news-left-grid">
 				<h3>Don’t be late,</h3>
 				<h2>Book your ticket now!</h2>
@@ -122,7 +121,13 @@ session_start();
 				<a class="more" href="#">MORE</a>
 			</div>
 			<div class="clearfix"></div>
-		</div>*/
+		</div>-->
+			 <?php 
+			 for($i=1; $i<6; $i++){
+			 	$imgUrl = 'images/r'.$i.'.jpg'; //getThumb function get here
+			echo '<li><img src="'.$imgUrl.'" alt="Thumbs"/></li>';			 	
+			 }
+			?>
 		<div class="more-reviews">
 			 <ul id="flexiselDemo2">
 			<li><img src="images/m1.jpg" alt=""/></li>
@@ -164,7 +169,7 @@ session_start();
 		<p class="claim">This is a freebies and not an official website, I have no intention of disclose any movie, brand, news.My goal here is to train or excercise my skill and share this freebies.</p>
 		<a href="example@mail.com">example@mail.com</a>
 		<div class="copyright">
-			<p> Template by  <a href="http://w3layouts.com">  W3layouts</a></p>
+			<p>Copyright<a href="#">&copy;EdFree</a></p>
 		</div>
 	</div>	
 	</div>
