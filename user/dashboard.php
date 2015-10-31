@@ -26,7 +26,7 @@
 			<div class="profile-sidebar">
 				<!-- SIDEBAR USERPIC -->
 				<div class="profile-userpic">
-					<img src="http://www.sofdule.com/loadimage?uid=$id&view=pic" class="img-responsive" alt="$fname's pic" title="$fname's pic" onclick="ppicviewer($id)"/>
+					<img src="" class="img-responsive" alt="$fname's pic" title=""/>
 				</div>
 				<!-- END SIDEBAR USERPIC -->
 				<!-- SIDEBAR USER TITLE -->
