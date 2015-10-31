@@ -40,6 +40,9 @@ if($err==null){
 	$row = $stmt->fetch();
 	$mix = $_POST['Pass'].$salt;
 	$enteredPass = hash('ripemd160', $mix);
+	//echo $db_password;
+	//echo "\n";
+	//echo $enteredPass;
 
 	if ($db_password == $enteredPass) {
                     // Password is correct!
@@ -57,11 +60,16 @@ if($err==null){
 					$_SESSION['login_string'];
 
 
-					header("Location: auth.php?try=success"); exit();
+					header("Location: ../model/auth.php?try=success"); exit();
 
 
 }else{
 	$err = 'Incorrect Credentials';
+}
+
+}else{
+	$err = 'Some Error';
+
 }
 
 }else{

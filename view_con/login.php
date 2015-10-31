@@ -1,11 +1,10 @@
 <?php
 session_start();
 $err = null;
-if(isset($_POST['register'])){
+if(isset($_POST['login'])){
   require_once('../model/process_login.php');
 }
 ?>
-</head>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +42,7 @@ if(isset($_POST['register'])){
 <div class="w3-container w3-card-4">
   <form method="post" name="Login-Form"  enctype="multipart/form-data" action="#">
   <h2>Login</h2>
-  <?php if($err!=null){echo $err;} ?>
+  <br/><?php if($err!=null){echo $err;} ?><br/>
   <label>Email</label>
   <input class="w3-input" type="email" style="width:90%" name="Email">
   <label>Password</label>
