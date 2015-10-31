@@ -21,12 +21,14 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container"><div class="row profile">
+
+<div class="container">
+    <div class="row profile">
 		<div class="col-md-3">
 			<div class="profile-sidebar">
 				<!-- SIDEBAR USERPIC -->
 				<div class="profile-userpic">
-					<img src="" class="img-responsive" alt="$fname's pic" title=""/>
+					<img src="http://www.sofdule.com/loadimage?uid=$id&view=pic" class="img-responsive" alt="$fname's pic" title="$fname's pic" onclick="ppicviewer($id)"/>
 				</div>
 				<!-- END SIDEBAR USERPIC -->
 				<!-- SIDEBAR USER TITLE -->
@@ -42,41 +44,41 @@
 				<!-- END SIDEBAR USER TITLE -->
 				<!-- SIDEBAR BUTTONS -->
 				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-sm" onclick="editProfile()" >Edit Profile</button>
-					<button type="button" class="btn btn-danger btn-sm" onclick="changeStatus()">Set Status</button>
+					<button type="button" class="btn btn-success btn-sm" onclick="$action1" id="to" >$btntxt1</button>
+					<button type="button" class="btn btn-danger btn-sm" onclick="sendmsg($id)" >Message</button>
 				</div>
 				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
 				<div class="profile-usermenu">
 					<ul class="nav">
 						<li class="active" id="overview">
-							<a href="#" onclick="changecontent('o','a')" >
+							<a href="#" onclick="loadcontent('o','a')" >
 							<i class="glyphicon glyphicon-home"></i>
 							Overview </a>
 						</li>
-						<li id="about" class="inactive">
-							<a href="#" onclick="changecontent('a','b')" >
+						<li class="inactive" id="about">
+							<a href="#" onclick="loadcontent('a','b')" >
 							<i class="glyphicon glyphicon-user"></i>
 							About </a>
 						</li>
-						<li id="msg" class="inactive">
-							<a href="#"  onclick="changecontent('m','c')">
+						<li class="inactive" id="prod">
+							<a href="#"  onclick="loadcontent('p','c')">
 							<i class="glyphicon glyphicon-ok"></i>
-							Messages </a>
+							 Products</a>
 						</li>
-						<li id="acc" class="inactive">
-							<a href="/settings?rd=pf&user=####XXXX####"  target="_blank">
+						<li class="inactive" id="more">
+							<a href="#" onclick="loadcontent('m','d')" >
 							<i class="glyphicon glyphicon-flag"></i>
-							Account Settings </a>
+							More</a>
 						</li>
 					</ul>
 				</div>
 				<!-- END MENU -->
 			</div>
 		</div>
-		<div class="col-md-8">
+<div class="col-md-8">
             <div class="profile-content">
-			   
+			   Some user related content goes here...
             </div>
 		</div>
 		<div class="col-md-1">
@@ -84,4 +86,4 @@
             </div>
 	</div>
 </div>
-<script>var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="css/profile.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="css/bootstrap.min.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="css/profile.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);</script>
+<script>var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="../css/profile.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="../css/bootstrap.min.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="../css/profile.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);</script>
