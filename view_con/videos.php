@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cinema A Entertainment Category Flat Bootstarp Resposive Website Template | Videos :: w3layouts</title>
+<title>Ed Free</title>
 <link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -29,9 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<ul>
 					<li><a href="../index.php"><div class="hm"><i class="home1"></i><i class="home2"></i></div></a></li>
 					<li><a class="active" href="videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<li><a href="reviews.php"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
-					<li><a href="../404.html"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
-					<li><a href="contact.php"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
+
 				</ul>
 			</div>
 		<div class="main">
@@ -201,7 +199,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
 					</div>
 					<div class="clearfix"> </div>
-					<!---start-pagenation----->
+					<!---start-pagenation-->
 					<div class="pagenation">
 						<ul>
 							<li><a href="#">1</a></li>
@@ -213,17 +211,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 					</div>
 					<div class="clearfix"> </div>
-					<!---End-pagenation----->
+					<!---End-pagenation---->
 				</div>
 			</div>
 			<div class="clearfix"> </div>
 			</div>	
-	<div class="footer">
+		<div class="footer">
 		<h6>Disclaimer : </h6>
-		<p class="claim">This is a freebies and not an official website, I have no intention of disclose any movie, brand, news.My goal here is to train or excercise my skill and share this freebies.</p>
-		<a href="example@mail.com">example@mail.com</a>
+		<p class="claim"> hack made @ InOut 2.0 <br> For educational purpose only , we made for helping out students in Rural India</p>
 		<div class="copyright">
-			<p> Template by  <a href="http://w3layouts.com">  W3layouts</a></p>
+			<p>Copyright<a href="#">&copy;EdFree</a></p>
 		</div>
 	</div>	
 	</div>

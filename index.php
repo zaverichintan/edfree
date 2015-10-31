@@ -24,7 +24,7 @@ if(isset($_GET['term'])){
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ed-Free::</title>
+<title>Ed Free</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -45,8 +45,7 @@ if(isset($_GET['term'])){
 				<ul>
 					<li><a class="active" href="../index.php"><i class="home"></i></a></li>
 					<li><a href="view_con/videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<li><a href="view_con/reviews.php"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
-					<li><a href="view_con/contact.php"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
+
 				</ul>
 			</div>
 		<div class="main">
@@ -178,8 +177,7 @@ if(isset($_GET['term'])){
 		</div>	
 	<div class="footer">
 		<h6>Disclaimer : </h6>
-		<p class="claim">This is a freebies and not an official website, I have no intention of disclose any movie, brand, news.My goal here is to train or excercise my skill and share this freebies.</p>
-		<a href="example@mail.com">example@mail.com</a>
+		<p class="claim"> hack made @ InOut 2.0 <br> For educational purpose only , we made for helping out students in Rural India</p>
 		<div class="copyright">
 			<p>Copyright<a href="#">&copy;EdFree</a></p>
 		</div>
