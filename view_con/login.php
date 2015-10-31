@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once('../model/loginfuncs.php');
+if(userIsLogged()){loadAuth();}
 $err = null;
 if(isset($_POST['login'])){
   require_once('../model/process_login.php');
@@ -21,7 +23,7 @@ if(isset($_POST['login'])){
 <meta name="keywords" content="Free, Education" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'/>
 </head>
 
 </head>
@@ -42,7 +44,7 @@ if(isset($_POST['login'])){
 <div class="w3-container w3-card-4">
   <form method="post" name="Login-Form"  enctype="multipart/form-data" action="#">
   <h2>Login</h2>
-  <br/><?php if($err!=null){echo $err;} ?><br/>
+  <br/><?php if($err!=null){echo $err;} ?><br/> 
   <label>Email</label>
   <input class="w3-input" type="email" style="width:90%" name="Email">
   <label>Password</label>

@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once('../model/loginfuncs.php');
+if(userIsLogged()){loadAuth();}
 $err = null;
 if(isset($_POST['register'])){
   require_once('../model/process_reg.php');

@@ -1,8 +1,11 @@
 <?php
 session_start();
+require_once('model/loginfuncs.php');
+if(userIsLogged()){loadAuth();}
 if(isset($_GET['term'])){
 	require_once('model/process_search.php');
 }
+
 ?>
 
 <!DOCTYPE html>
