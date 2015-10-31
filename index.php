@@ -1,7 +1,19 @@
 <?php
 session_start();
 require_once('model/loginfuncs.php');
-if(userIsLogged()){loadAuth();}
+if(userIsLogged()){
+	$con = <<<html
+	<a class="video register" href="view_con/register.php"><i class="video1 reg"></i>Upload</a>
+	<a class="video login" href="view_con/login.php"><i class="video1 log"></i>Watch</a>
+html;
+
+}else{
+	$con = <<<html
+	<a class="video upload" href="users/upload.php"><i class="video1 reg"></i>Register</a>
+	<a class="video watch" href="view_con/videos.php"><i class="video1 log"></i>Login</a>
+html;
+
+}
 if(isset($_GET['term'])){
 	require_once('model/process_search.php');
 }
@@ -56,8 +68,7 @@ if(isset($_GET['term'])){
 				<p class="tags"><a href="#">Tags:</a><?php echo 'Tags will display here'; ?></p>
 				<p class="review">Views	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  <?php echo 'view-count';?></p>
 				<p class="special"></p>
-				<a class="video register" href="view_con/register.php"><i class="video1 reg"></i>Register</a>
-				<a class="video login" href="view_con/login.php"><i class="video1 log"></i>Login</a>
+				<?php echo $con;?>
 			</div>
 		</div>
 		<div class="review-slider">
