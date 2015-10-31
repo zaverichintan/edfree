@@ -8,11 +8,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Cinema A Entertainment Category Flat Bootstarp Resposive Website Template | Reviews :: w3layouts</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<script src="js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -27,18 +27,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="full">
 			<div class="menu">
 				<ul>
-					<li><a href="index.html"><div class="hm"><i class="home1"></i><i class="home2"></i></div></a></li>
-					<li><a href="videos.html"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<li><a class="active" href="reviews.html"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
-					<li><a href="404.html"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
-					<li><a href="contact.html"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
+					<li><a href="../index.php"><div class="hm"><i class="home1"></i><i class="home2"></i></div></a></li>
+					<li><a href="videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
+					<li><a class="active" href="reviews.php"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
+					<li><a href="../404.html"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
+					<li><a href="contact.php"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
 				</ul>
 			</div>
 		<div class="main">
 		<div class="review-content">
 			<div class="top-header span_top">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+					<a href="../index.php"><img src="../images/logo.png" alt="" /></a>
 					<p>Movie Theater</p>
 				</div>
 				<div class="search v-search">
@@ -54,10 +54,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-9 reviews-grids">
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r4.jpg" alt="" /></a>
+								<a href="single.php"><img src="../images/r4.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="single.html">Lorem  <i>Movie Review</i></a>
+								<a class="span" href="single.php">Lorem  <i>Movie Review</i></a>
 								<p class="dirctr"><a href="">Reagan Gavin Rasquinha, </a>TNN, Mar 12, 2015, 12.47PM IST</p>								
 								<p class="ratingview">Critic's Rating:</p>
 								<div class="rating">
@@ -113,10 +113,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r6.jpg" alt="" /></a>
+								<a href="single.php"><img src="../images/r6.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="single.html">Lorem  <i>Movie Review</i></a>
+								<a class="span" href="single.php">Lorem  <i>Movie Review</i></a>
 								<p class="dirctr"><a href="">Reagan Gavin Rasquinha, </a>TNN, Mar 12, 2015, 12.47PM IST</p>
 								<p class="ratingview">Critic's Rating:</p>
 								<div class="rating">
@@ -172,10 +172,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r5.jpg" alt="" /></a>
+								<a href="single.php"><img src="../images/r5.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="single.html">Lorem  <i>Movie Review</i></a>
+								<a class="span" href="single.php">Lorem  <i>Movie Review</i></a>
 								<p class="dirctr"><a href="">Reagan Gavin Rasquinha, </a>TNN, Mar 12, 2015, 12.47PM IST</p>
 								<p class="ratingview">Critic's Rating:</p>
 								<div class="rating">
@@ -231,10 +231,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r1.jpg" alt="" /></a>
+								<a href="single.php"><img src="../images/r1.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="single.html">Lorem  <i>Movie Review</i></a>
+								<a class="span" href="single.php">Lorem  <i>Movie Review</i></a>
 								<p class="dirctr"><a href="">Reagan Gavin Rasquinha, </a>TNN, Mar 12, 2015, 12.47PM IST</p>
 								<p class="ratingview">Critic's Rating:</p>
 								<div class="rating">
@@ -290,10 +290,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r3.jpg" alt="" /></a>
+								<a href="single.php"><img src="../images/r3.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="single.html">Lorem  <i>Movie Review</i></a>
+								<a class="span" href="single.php">Lorem  <i>Movie Review</i></a>
 								<p class="dirctr"><a href="">Reagan Gavin Rasquinha, </a>TNN, Mar 12, 2015, 12.47PM IST</p>
 								<p class="ratingview">Critic's Rating:</p>
 								<div class="rating">
@@ -353,27 +353,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h3>Featured Today in Movie Reviews</h3>
 							<ul>
 								<li>
-									<a href="single.html"><img src="images/f1.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f1.jpg" alt="" /></a>
 									<p>lorem movie review</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f2.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f2.jpg" alt="" /></a>
 									<p>lorem movie review</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f3.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f3.jpg" alt="" /></a>
 									<p>lorem movie review</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f4.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f4.jpg" alt="" /></a>
 									<p>lorem movie review</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f5.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f5.jpg" alt="" /></a>
 									<p>lorem movie review</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f6.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f6.jpg" alt="" /></a>
 									<p>lorem movie review</p>
 								</li>
 								<div class="clearfix"></div>
@@ -384,60 +384,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h3>Featured Today in Entertainment</h3>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f6.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f6.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Watch ‘Bombay Velvet’ trailer during WC match</a>
+									<a href="single.php">Watch ‘Bombay Velvet’ trailer during WC match</a>
 								
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f5.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f5.jpg" alt="" /></a>
 								</li>
 									<li>
-									<a href="single.html">Watch ‘Bombay Velvet’ trailer during WC match</a>
+									<a href="single.php">Watch ‘Bombay Velvet’ trailer during WC match</a>
 							
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f3.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f3.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Watch ‘Bombay Velvet’ trailer during WC match</a>
+									<a href="single.php">Watch ‘Bombay Velvet’ trailer during WC match</a>
 								
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f4.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f4.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Watch ‘Bombay Velvet’ trailer during WC match</a>
+									<a href="single.php">Watch ‘Bombay Velvet’ trailer during WC match</a>
 								
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f2.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f2.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Watch ‘Bombay Velvet’ trailer during WC match</a>
+									<a href="single.php">Watch ‘Bombay Velvet’ trailer during WC match</a>
 							
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f1.jpg" alt="" /></a>
+									<a href="single.php"><img src="../images/f1.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Watch ‘Bombay Velvet’ trailer during WC match</a>
+									<a href="single.php">Watch ‘Bombay Velvet’ trailer during WC match</a>
 								
 								</li>
 								<div class="clearfix"></div>
@@ -447,41 +447,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h4>You might also like</h4>
 				<div class="might-grid">
 					<div class="grid-might">
-						<a href="single.html"><img src="images/mi.jpg" class="img-responsive" alt=""> </a>
+						<a href="single.php"><img src="../images/mi.jpg" class="img-responsive" alt=""> </a>
 					</div>
 					<div class="might-top">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-						<a href="single.html">Lorem Ipsum <i> </i></a>
+						<a href="single.php">Lorem Ipsum <i> </i></a>
 					</div>
 				<div class="clearfix"></div>
 				</div>
 				<div class="might-grid">
 					<div class="grid-might">
-						<a href="single.html"><img src="images/mi1.jpg" class="img-responsive" alt=""> </a>
+						<a href="single.php"><img src="../images/mi1.jpg" class="img-responsive" alt=""> </a>
 					</div>
 					<div class="might-top">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-						<a href="single.html">Lorem Ipsum <i> </i></a>
+						<a href="single.php">Lorem Ipsum <i> </i></a>
 					</div>
 				<div class="clearfix"></div>
 				</div>
 				<div class="might-grid">
 					<div class="grid-might">
-						<a href="single.html"><img src="images/mi2.jpg" class="img-responsive" alt=""> </a>
+						<a href="single.php"><img src="../images/mi2.jpg" class="img-responsive" alt=""> </a>
 					</div>
 					<div class="might-top">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-						<a href="single.html">Lorem Ipsum <i> </i></a>
+						<a href="single.php">Lorem Ipsum <i> </i></a>
 					</div>
 				<div class="clearfix"></div>
 				</div>
 				<div class="might-grid">
 					<div class="grid-might">
-						<a href="single.html"><img src="images/mi3.jpg" class="img-responsive" alt=""> </a>
+						<a href="single.php"><img src="../images/mi3.jpg" class="img-responsive" alt=""> </a>
 					</div>
 					<div class="might-top">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-						<a href="single.html">Lorem Ipsum <i> </i></a>
+						<a href="single.php">Lorem Ipsum <i> </i></a>
 					</div>
 				<div class="clearfix"></div>
 				</div>
@@ -490,13 +490,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="grid-top">
 				<h4>Archives</h4>
 				<ul>
-					<li><a href="single.html">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </a></li>
-					<li><a href="single.html">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</a></li>
-					<li><a href="single.html">When an unknown printer took a galley of type and scrambled it to make a type specimen book. </a> </li>
-					<li><a href="single.html">It has survived not only five centuries, but also the leap into electronic typesetting</a> </li>
-					<li><a href="single.html">Remaining essentially unchanged. It was popularised in the 1960s with the release of </a> </li>
-					<li><a href="single.html">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing </a> </li>
-					<li><a href="single.html">Software like Aldus PageMaker including versionsof Lorem Ipsum.</a> </li>
+					<li><a href="single.php">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </a></li>
+					<li><a href="single.php">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</a></li>
+					<li><a href="single.php">When an unknown printer took a galley of type and scrambled it to make a type specimen book. </a> </li>
+					<li><a href="single.php">It has survived not only five centuries, but also the leap into electronic typesetting</a> </li>
+					<li><a href="single.php">Remaining essentially unchanged. It was popularised in the 1960s with the release of </a> </li>
+					<li><a href="single.php">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing </a> </li>
+					<li><a href="single.php">Software like Aldus PageMaker including versionsof Lorem Ipsum.</a> </li>
 				</ul>
 				</div>
 				<!---->
@@ -508,12 +508,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		<div class="review-slider">
 			 <ul id="flexiselDemo1">
-			<li><img src="images/r1.jpg" alt=""/></li>
-			<li><img src="images/r2.jpg" alt=""/></li>
-			<li><img src="images/r3.jpg" alt=""/></li>
-			<li><img src="images/r4.jpg" alt=""/></li>
-			<li><img src="images/r5.jpg" alt=""/></li>
-			<li><img src="images/r6.jpg" alt=""/></li>
+			<li><img src="../images/r1.jpg" alt=""/></li>
+			<li><img src="../images/r2.jpg" alt=""/></li>
+			<li><img src="../images/r3.jpg" alt=""/></li>
+			<li><img src="../images/r4.jpg" alt=""/></li>
+			<li><img src="../images/r5.jpg" alt=""/></li>
+			<li><img src="../images/r6.jpg" alt=""/></li>
 		</ul>
 			<script type="text/javascript">
 		$(window).load(function() {
@@ -542,7 +542,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 			});
 		</script>
-		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+		<script type="text/javascript" src="../js/jquery.flexisel.js"></script>
 		</div>		
 	<div class="footer">
 		<h6>Disclaimer : </h6>
