@@ -3,14 +3,14 @@ session_start();
 require_once('model/loginfuncs.php');
 if(userIsLogged()){
 	$con = <<<html
-	<a class="video upload" href="users/dashboard.php"><i class="video1 reg"></i>Register</a>
-	<a class="video watch" href="view_con/videos.php"><i class="video1 log"></i>Login</a>
+	<a class="video upload" href="user/dashboard.php"><i class="video1 reg"></i>Upload</a>
+	<a class="video watch" href="view_con/videos.php"><i class="video1 log"></i>Watch</a>
 html;
 
 }else{
 	$con = <<<html
-	<a class="video register" href="view_con/register.php"><i class="video1 reg"></i>Upload</a>
-	<a class="video login" href="view_con/login.php"><i class="video1 log"></i>Watch</a>
+	<a class="video register" href="view_con/register.php"><i class="video1 reg"></i>Register</a>
+	<a class="video login" href="view_con/login.php"><i class="video1 log"></i>Login</a>
 
 html;
 
