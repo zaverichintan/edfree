@@ -13,7 +13,7 @@ if(isset($_GET['term'])){
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<script src="jsp/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -50,8 +50,8 @@ if(isset($_GET['term'])){
 				<div class="clearfix"></div>
 			</div>
 			<div class="header-info">
-				<h1>BIG HERO 6</h1>
-				<p class="age"><a href="#">All Age</a> Don Hall, Chris Williams</p>
+				<h1>Top Viewed Video</h1>
+				<p class="tags"><a href="#">Tags:</a><?php echo 'Tags will display here'; ?>/p>
 				<p class="review">Rating	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  8,5/10</p>
 				<p class="review reviewgo">Genre	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Animation, Action, Comedy</p>
 				<p class="review">Release &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp; 7 November 2014</p>
@@ -166,7 +166,7 @@ if(isset($_GET['term'])){
 		<p class="claim">This is a freebies and not an official website, I have no intention of disclose any movie, brand, news.My goal here is to train or excercise my skill and share this freebies.</p>
 		<a href="example@mail.com">example@mail.com</a>
 		<div class="copyright">
-			<p> Template by  <a href="http://w3layouts.com">  W3layouts</a></p>
+			<p>Copyright<a href="http://w3layouts.com">&copy;W3layouts</a></p>
 		</div>
 	</div>	
 	</div>
