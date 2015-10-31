@@ -1,8 +1,23 @@
 <?php
 if(isset($_POST['register'])&&isset($_POST['Name'])&&isset($_POST['Email'])&&isset($_POST['Pass'])&&isset($_POST['Rpass'])){
-	require_once()
+	require_once('db-config.php');
 
 $_POST['fname']= ucfirst(strtolower($_POST['Name']));
+
+function test_input($data) {
+$servername = "localhost";
+$username = "Ed-Free";
+$password = "password@me";
+$dbname = "edfree";
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  $data = mysqli_real_escape_string($conn,$data);
+  $data = strip_tags($data);
+  return $data;
+}
 
 $name = test_input($_POST['Name']);
 
@@ -20,19 +35,12 @@ $password = $_POST['Pass'];
 
 
 
-if (!preg_match("/^[a-zA-Z ]*$/",$Name)) {
-  $err = "Only letters and white space allowed in Name"; 
-}
-if (!preg_match("/^[a-zA-Z ]*$/",$lname)) {
+if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
   $err = "Only letters and white space allowed in Name"; 
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   $err = "Invalid email format"; 
-}
-
-if (!preg_match("/^[0-9]*$/",$phno)) {
-  $err = "Invalid Mobile No."; 
 }
 
 $check = "SELECT email FROM users WHERE email = '$email'";
@@ -50,7 +58,7 @@ $password = hash('ripemd160', $mix);
 
 $stmt = $conn->prepare("INSERT INTO users (Name, email, password, salt ) VALUES (?, ?, ?, ?)");
 
-$stmt->bind_param("sssss", $name,$email,$password, $salt);
+$stmt->bind_param("ssss", $name,$email,$password, $salt);
 $stmt->execute();
 $stmt->close();
 }
