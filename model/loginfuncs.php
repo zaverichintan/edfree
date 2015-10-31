@@ -43,5 +43,5 @@ else {setcookie('logout','Login to continue',0,'/'); return false; } // Not logg
 
 
 function loadAuth(){
-	header("Location: ../model/auth.php?try=success"); exit();
+	header("Location: /edfree/model/auth.php?try=success"); exit();
 }

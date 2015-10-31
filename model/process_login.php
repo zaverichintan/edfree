@@ -53,7 +53,7 @@ if($err==null){
                     $user_id = preg_replace("/[^0-9]+/", "", $user_id);
 					
 					$_SESSION['user_id'] = $user_id ;
-					$_SESSION['login_string'] = hash('sha512', $password . $user_browser);
+					$_SESSION['login_string'] = hash('sha512', $db_password . $user_browser);
 					$_SESSION['email'] = $mail; 
 					$_SESSION['user_id'];
 					$_SESSION['email'];
