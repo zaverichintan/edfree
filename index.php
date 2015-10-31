@@ -97,9 +97,9 @@ session_start();
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>
 		<div class="video">
-			<iframe  src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
+			<iframe  src="https://www.youtube.com/embed/<?php echo'2LqzF5WauAw'; ?>" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<div class="news">
+		/*<div class="news">
 			<div class="col-md-6 news-left-grid">
 				<h3>Don’t be late,</h3>
 				<h2>Book your ticket now!</h2>
@@ -122,7 +122,7 @@ session_start();
 				<a class="more" href="#">MORE</a>
 			</div>
 			<div class="clearfix"></div>
-		</div>
+		</div>*/
 		<div class="more-reviews">
 			 <ul id="flexiselDemo2">
 			<li><img src="images/m1.jpg" alt=""/></li>
