@@ -1,4 +1,4 @@
-
+<?php if(!isset($_GET['load'])){header("Location: ../index.php");} ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,6 +44,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="container">
 				<div class="row">
+					<?php
+					$id = $_GET['load'];
+					echo'<iframe width="854" height="480" src="https://www.youtube.com/embed/'.$id.'" frameborder="0" allowfullscreen></iframe>';
+					?>
 				</div>
 			</div>
 		<div class="review-slider">

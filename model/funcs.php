@@ -11,7 +11,7 @@ $dbname = "edfree";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-	$query = "SELECT * FROM videos WHERE 'Vid_Id' = $id";
+	$query = "SELECT * FROM 'videos' WHERE 'video-id' = '$id'";
 	$result = mysqli_query($conn, $query);
 	$row = mysqli_fetch_assoc($result);   
 	$videoID = $row["id"];
