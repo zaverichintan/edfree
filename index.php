@@ -26,10 +26,10 @@ session_start();
 			<div class="menu">
 				<ul>
 					<li><a class="active" href="index.php"><i class="home"></i></a></li>
-					<li><a href="videos.html"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<li><a href="reviews.html"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
-					<li><a href="404.html"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
-					<li><a href="contact.html"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
+					<li><a href="videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
+					<li><a href="reviews.php"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
+					<li><a href="404.php"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
+					<li><a href="contact.php"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
 				</ul>
 			</div>
 		<div class="main">
@@ -39,10 +39,10 @@ session_start();
 					<a href="index.php"><img src="images/logo.png" alt="" /></a>
 					<p>Curated Education</p>
 				</div>
-				<div class="search">
-					<form>
-						<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>
-						<input type="submit" value="">
+				<div class="search" >
+					<form action="">
+						<input type="text" name="term" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>
+						<input type="submit" value="submit" >
 					</form>
 				</div>
 				<div class="clearfix"></div>
@@ -97,9 +97,9 @@ session_start();
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>
 		<div class="video">
-			<iframe  src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
+			<iframe  src="https://www.youtube.com/embed/<?php echo'2LqzF5WauAw'; ?>" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<div class="news">
+		/*<div class="news">
 			<div class="col-md-6 news-left-grid">
 				<h3>Don’t be late,</h3>
 				<h2>Book your ticket now!</h2>
@@ -122,7 +122,7 @@ session_start();
 				<a class="more" href="#">MORE</a>
 			</div>
 			<div class="clearfix"></div>
-		</div>
+		</div>*/
 		<div class="more-reviews">
 			 <ul id="flexiselDemo2">
 			<li><img src="images/m1.jpg" alt=""/></li>
