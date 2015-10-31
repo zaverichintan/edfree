@@ -60,7 +60,7 @@ if(isset($_GET['term'])){
 		<div class="review-slider">
 			 <ul id="flexiselDemo1">
 			 <?php 
-			 for($i=0;i<6;i++){
+			 for($i=0; $i<6; $i++){
 			 	$imgUrl = images/r$i.jpg; //getThumb function get here
 			echo '<li><img src="$imgUrl" alt="Thumbs"/></li>';			 	
 			 }
