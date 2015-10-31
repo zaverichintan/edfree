@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once('model/loginfuncs.php');
+require_once('model/funcs.php');
 if(userIsLogged()){
 	$con = <<<html
 	<a class="video upload" href="user/dashboard.php"><i class="video1 reg"></i>Upload</a>
@@ -75,8 +76,8 @@ if(isset($_GET['term'])){
 			 <ul id="flexiselDemo1">
 			 <?php 
 			 for($i=1; $i<6; $i++){
-			 	$imgUrl = getThumb();//getThumb function get here
-			echo '<li><img src="'.$imgUrl.'" alt="Thumbs"/></li>';			 	
+			 	$imgUrl = getThumb($i);//getThumb function get here
+			echo '<a href="view_con/single.php?load='.getVideo($i).'><li><img src="'.$imgUrl.'" alt="Thumbs"/></li></a>';			 	
 			 }
 			?>
 		</ul>
