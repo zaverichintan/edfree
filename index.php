@@ -46,7 +46,7 @@ if(isset($_GET['term'])){
 				<ul>
 					<li><a class="active" href="../index.php"><i class="home"></i></a></li>
 					<li><a href="view_con/videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="../user/logout.php"/></a>';} ?>
+					<?php if(userIsLogged()){echo '<li><a href="../user/logout.php"><img src="../images/logout.png"/></a>';} ?>
 
 				</ul>
 			</div>
