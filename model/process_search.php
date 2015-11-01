@@ -54,7 +54,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 					<p>Educating India</p>
 				</div>
 				<div class="search" >
-					<form action="">
+					<form action="../index.php">
 						<input type="text" name="term" placeholder="Search.."/>
 						<input type="submit" value="submit" />
 					</form>
@@ -68,7 +68,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 	</div>
 	<div class='container'>
-		
+		<h2>Search Results</h2>
+
 
 
 	</div>

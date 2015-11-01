@@ -32,11 +32,11 @@ $user_ip =  $_SERVER['REMOTE_ADDR'];
 
 if ($pwd != null){ $login_check = hash('sha512', $db_password . $user_browser);
     if ($login_check == $login_string) { return true; } // Logged In!!!!				
-		else { setcookie('logout','You have been logged out due to Password change or IP change',0,'/'); return false; } // Not logged in 
+		else { return false; } // Not logged in 
 				 }
 				 else { return false; } // Not logged in 
 }
-else {setcookie('logout','Login to continue',0,'/'); return false; } // Not logged in 
+else { return false; } // Not logged in 
 
 }
 

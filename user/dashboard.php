@@ -39,7 +39,7 @@ if (isset($_POST['file-submit'])) {
 				<ul>
 					<li><a class="active" href="../index.php"><i class="home"></i></a></li>
 					<li><a href="view_con/videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="/edfree/images/logout.png"/></a>';} ?>
+					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="../user/logout.php"/></a>';} ?>
 
 				</ul>
 			</div>
@@ -51,7 +51,7 @@ if (isset($_POST['file-submit'])) {
 					<p>Educating India</p>
 				</div>
 				<div class="search" >
-					<form action="">
+					<form action="../index.php">
 						<input type="text" name="term" placeholder="Search.."/>
 						<input type="submit" value="submit" />
 					</form>
