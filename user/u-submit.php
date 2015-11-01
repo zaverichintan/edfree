@@ -16,8 +16,17 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 		}
 	}elseif ($type=='page-link') {
 		if(isset($_POST['page-url'])){
-			$videoURL = $_POST['page-url'];
+			require_once('../model/crawl.class.php');
+			$URL = $_POST['page-url'];
 			//crawl url and get video.
+			$crawl = new Crawl($URL);
+			$videoURL = $crawl->getVideoLink();
+
+			$q = 'INSERT INTO temp_uploads (uploadURL,Tby) VALUES(?,?)';
+			$stmt = $conn->prepare($q);
+			$stmt->bind_param("si", $videoURL,$_SESSION['user-id']);
+			$stmt->execute();
+			$stmt->close();
 
 		}else{
 			$err = 'You Selected Page link but didn\'t add a link';
@@ -49,7 +58,7 @@ if (file_exists($target_file)) {
 }
 // Check file size
 if ($_FILES["video"]["size"] > 500000000) {
-    $err "Sorry, your file is too large.";
+    $err = "Sorry, your file is too large.";
     $uploadOk = 0;
 }
 // Allow certain file formats
