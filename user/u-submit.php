@@ -5,6 +5,8 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 		if(isset($_POST['vid-url'])){
 			$videoURL = $_POST['vid-url'];
 			$video = file_get_contents($videoURL);
+			
+
 
 
 
