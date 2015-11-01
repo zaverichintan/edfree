@@ -27,6 +27,53 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 	}elseif ($type=='video') {
 		if(isset($_FILES['video'])){
 			//save uploaded video.
+			
+			
+$target_dir = "temp/";
+$target_file = $target_dir . basename($_FILES["video"]["name"]);
+$uploadOk = 1;
+$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+// Check if image file is a actual image or fake image
+    $check = getimagesize($_FILES["video"]["tmp_name"]);
+    if($check !== false) {
+        //"File is an image - " . $check["mime"] . ".";
+        $uploadOk = 1;
+    } else {
+        $err = "File is not an image.";
+        $uploadOk = 0;
+    }
+// Check if file already exists
+if (file_exists($target_file)) {
+    $err =  "Sorry, file already exists.";
+    $uploadOk = 0;
+}
+// Check file size
+if ($_FILES["video"]["size"] > 500000000) {
+    $err "Sorry, your file is too large.";
+    $uploadOk = 0;
+}
+// Allow certain file formats
+if($imageFileType != "mp4" && $imageFileType != "mov" && $imageFileType != "avi"
+&& $imageFileType != "gif" ) {
+    $err = "Sorry, only mp4, mov, avi & GIF files are allowed.";
+    $uploadOk = 0;
+}
+// Check if $uploadOk is set to 0 by an error
+if ($uploadOk == 0) {
+    //$err = "Sorry, your file was not uploaded.";
+// if everything is ok, try to upload file
+} else {
+    if (move_uploaded_file($_FILES["video"]["tmp_name"], $target_file)) {
+        //echo "The file ". basename( $_FILES["video"]["name"]). " has been uploaded.";
+    } else {
+        $err = "Sorry, there was an error uploading your file.";
+    }
+}
+			$q = 'INSERT INTO temp_uploads (uploadURL,Tby) VALUES(?,?)';
+			$stmt = $conn->prepare($q);
+			$stmt->bind_param("si", $target_file,$_SESSION['user-id']);
+			$stmt->execute();
+			$stmt->close();
 
 
 
