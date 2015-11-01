@@ -1,6 +1,7 @@
 <?php
 
 if(isset($_GET['term'])){
+	require_once('model/db-config.php');
 	function test_input($data) {
 $servername = "localhost";
 $username = "Ed-Free";
@@ -40,7 +41,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 	<div class="full">
 			<div class="menu">
 				<ul>
-					<li><a class="active" href="../index.php"><i class="home"></i></a></li>
+					<li><a class="active" href="index.php"><i class="home"></i></a></li>
 					<li><a href="view_con/videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
 					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="../user/logout.php"/></a>';} ?>
 
@@ -68,16 +69,23 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 		<?php
 		//SELECT * FROM `videos` WHERE `url` LIKE 'sdss' AND `youtube-id` LIKE 'sss'
 		$q = "SELECT * FROM 'videos' WHERE 'url LIKE '$searchTerm' OR 'youtube-id LIKE '$searchTerm' ";
+		//echo $q;
 		$result = mysqli_query($conn, $q);
 		if (mysqli_num_rows($result) > 0) {
 			echo "Search Results for $searchTerm :";
 			while($row = mysqli_fetch_assoc($result)) {
+				$con = <<<html
+
+
+html;
+			echo $con;
 
 			}
 
 		}else{
-			echo 'NO RESULTS'
+			echo 'NO RESULTS';
 		}
+		?>
 
 
 

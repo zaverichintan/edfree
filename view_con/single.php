@@ -57,6 +57,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					$row = mysqli_fetch_assoc($result);   
 					$videoID = $row["youtube-id"];
 					echo'<iframe style="margin-right:3%;" width="60%" height="480" src="https://www.youtube.com/embed/'.$videoID.'" frameborder="0" allowfullscreen></iframe>';
+
+					/*echo "TAGS: ";
+					$arr = $row['tags'];
+					foreach ($arr as $key => $value) {
+						echo '$value';
+					}*/
+
+
+					echo $row['details'];
 					?>
 
 					</div>
