@@ -16,6 +16,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
   return $data;
 }
 	$searchTerm = test_input($_GET['term']);
+	
+
 }
 
 
