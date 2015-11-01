@@ -43,6 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="submit" value="">
 					</form>
 				</div>
+				<div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'></div><script type='text/javascript'>setTimeout(function(){{var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location && location.href && location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=Manual&from=';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); }},0);</script>
 				<div class="clearfix"></div>
 			</div>
 			<div class="container">
@@ -64,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 for($i=1; $i<6; $i++){
 			 	$imgUrl = getThumb($i);//model/loadimage.php?getThumb='.$i;//getThumb function get here
 			 	$im = getVideo($i);
-			echo '<a href="view_con/single.php?load='.$im.' " ><li><img src="'.$imgUrl.'" alt="Thumbs"/></li></a>';			 	
+			echo '<a href="../view_con/single.php?load='.$im.' " ><li><img src="'.$imgUrl.'" alt="Thumbs"/></li></a>';			 	
 			 }
 			?>
 		</ul>
