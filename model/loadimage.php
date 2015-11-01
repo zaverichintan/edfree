@@ -3,7 +3,7 @@ if(isset($_GET['getThumb'])){
 	$id = $_GET['getThumb'];
 	require_once('db-config.php');
 	$query = 'SELECT * FROM videos WHERE id = ' .$id ;
-	echo $query;
+	//echo $query;
 	$result = mysqli_query($conn, $query);
 	$row = mysqli_fetch_assoc($result);   
 	$videoID = $row["youtube-id"];

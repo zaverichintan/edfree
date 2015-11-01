@@ -1,7 +1,15 @@
 <?php
+session_start();
+$err=null;
+require_once('../model/db-config.php');
+	$query = 'SELECT * FROM users WHERE uid = ' .$_SESSION['user_id'] ;
+	$result = mysqli_query($conn, $query);
+	$row = mysqli_fetch_assoc($result);   
+	$name = $row['name'];
 
-
-
+if (isset($_POST['file-submit'])) {
+	require_once('u-submit.php');
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,6 +18,7 @@
 <link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/profile.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 <script src="../js/jquery.min.js"></script>
 <!-- Custom Theme files -->
@@ -28,62 +37,55 @@
 			<div class="profile-sidebar">
 				<!-- SIDEBAR USERPIC -->
 				<div class="profile-userpic">
-					<img src="../image/def.png" class="img-responsive" alt="$fname's pic" title="$fname's pic" onclick="ppicviewer($id)"/>
+					<img src="https://www.drupal.org/files/profile_default.png" class="img-responsive" alt="">
 				</div>
 				<!-- END SIDEBAR USERPIC -->
 				<!-- SIDEBAR USER TITLE -->
 				<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
-						$fname $lname
-					</div>
-					<div class="profile-status">Status:  $quote </div><br/>
-					<div class="profile-usertitle-job">
-						$type
+						<?php echo $name; ?>
 					</div>
 				</div>
 				<!-- END SIDEBAR USER TITLE -->
-				<!-- SIDEBAR BUTTONS -->
-				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-success btn-sm" onclick="$action1" id="to" >$btntxt1</button>
-					<button type="button" class="btn btn-danger btn-sm" onclick="sendmsg($id)" >Message</button>
-				</div>
-				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
 				<div class="profile-usermenu">
 					<ul class="nav">
-						<li class="active" id="overview">
-							<a href="#" onclick="loadcontent('o','a')" >
+						<li class="active">
+							<a href="#">
 							<i class="glyphicon glyphicon-home"></i>
 							Overview </a>
 						</li>
-						<li class="inactive" id="about">
-							<a href="#" onclick="loadcontent('a','b')" >
-							<i class="glyphicon glyphicon-user"></i>
-							About </a>
-						</li>
-						<li class="inactive" id="prod">
-							<a href="#"  onclick="loadcontent('p','c')">
-							<i class="glyphicon glyphicon-ok"></i>
-							 Products</a>
-						</li>
-						<li class="inactive" id="more">
-							<a href="#" onclick="loadcontent('m','d')" >
-							<i class="glyphicon glyphicon-flag"></i>
-							More</a>
-						</li>
+
 					</ul>
 				</div>
 				<!-- END MENU -->
 			</div>
 		</div>
-<div class="col-md-8">
+		<div class="col-md-9">
             <div class="profile-content">
-			   Some user related content goes here...
+            	<div>
+            		<form method ='post' enctype="multipart/form-data" action="#">
+            			<h2>Upload Files</h2><br/><br/>
+            			<p><?php if($err!=null){echo $err;}?></p>
+            			<h3>Choose anyone</h3><br/>
+            			<br/><input type='radio' name='type' value='vid-link' /> Video Link<br/>
+            			<input type='text' name='vid-url' placeholder='Video Link'/><br/>
+
+						<br/><input type='radio' name='type' value='page-link' /> Video from page<br/>
+            			<input type='text' name='page-url' placeholder='Page Link'  /><br/>
+
+            			<br/><input type='radio' name='type' value='video' />Upload from computer<br/>
+            			<input type='file' name='video' /><br/>
+
+            			<input type='submit' name='file-submit' />
+
+            		</form>
+            	</div>
+			   
             </div>
 		</div>
-		<div class="col-md-1">
-            Chat Bar
-            </div>
 	</div>
 </div>
-<script>var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="../css/profile.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="../css/bootstrap.min.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);var cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="../css/profile.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);</script>
+
+</body>
+</html>
