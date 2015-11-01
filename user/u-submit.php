@@ -4,12 +4,13 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 	if($type=='vid-link'){
 		if(isset($_POST['vid-url'])){
 			$videoURL = $_POST['vid-url'];
-			$video = file_get_contents($videoURL);
+			//$video = file_get_contents($videoURL);
+			$q = 'INSERT INTO temp_uploads (uploadURL,Tby) VALUES(?,?)';
+			$stmt = $conn->prepare($q);
+			$stmt->bind_param("si", $videoURL,$_SESSION['user-id']);
+			$stmt->execute();
+			$stmt->close();
 			
-
-
-
-
 		}else{
 			$err = 'You Selected Video link but didn\'t add a link';
 		}

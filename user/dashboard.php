@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once('../model/loginfuncs.php');
+if(!userIsLogged()){header('Location: ../view_con/login.php');exit();}
 $err=null;
 require_once('../model/db-config.php');
 	$query = 'SELECT * FROM users WHERE uid = ' .$_SESSION['user_id'] ;
@@ -25,6 +27,8 @@ if (isset($_POST['file-submit'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Free, Education" />
+<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -77,6 +81,23 @@ if (isset($_POST['file-submit'])) {
             			<br/><input type='radio' name='type' value='video' />Upload from computer<br/>
             			<input type='file' name='video' /><br/>
 
+
+            			<select class='tagsSelect' id='tagsSelect' name='tagsSelect' multiple="multiple">
+            				<option disabled>Select tags</option>
+            				<?php
+            				$q = 'SELECT * FROM tags';
+            				$result = mysqli_query($conn, $q);
+							if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    						while($row = mysqli_fetch_assoc($result)) {
+    							$id = $row['tag-id'];
+    							$tag = $row['tag-name'];
+    							echo "<option value='$id'>$tag</option>";
+    						}
+    						}  
+            				?>
+            			</select>
+            			<br/>
             			<input type='submit' name='file-submit' />
 
             		</form>
@@ -86,6 +107,8 @@ if (isset($_POST['file-submit'])) {
 		</div>
 	</div>
 </div>
-
+<script>
+$(".tagsSelect").select2({placeholder: "Select tags",tags: true});
+</script
 </body>
 </html>
