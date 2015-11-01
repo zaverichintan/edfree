@@ -1,6 +1,6 @@
 <?php
 require_once('../model/db-config.php');
-if(isset($_POST['file-submit'])&&isset($_POST['type'])){
+if(isset($_POST['file-submit'])&&isset($_POST['type'])&&isset($_POST['tagsSelect'])){
 	$type = $_POST['type'];
 	if($type=='vid-link'){
 		if(isset($_POST['vid-url'])){
@@ -8,9 +8,7 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 			//$video = file_get_contents($videoURL);
 			$id = $_SESSION['user-id'];
 			$tags =$_POST['tagsSelect'];
-			//var_dump($tags);
-			//print_r($tags);
-			$q = "INSERT INTO temp_uploads (uploadURL,Tby) VALUES ('$videoURL','$id')";
+			$q = "INSERT INTO temp_uploads (uploadURL,Tby,tags) VALUES ('$videoURL','$id','$tags')";
 			mysqli_query($conn, $q);
 		}else{
 			$err = 'You Selected Video link but didn\'t add a link';
@@ -24,7 +22,8 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 			$videoURL = $crawl->getVideoLink();
 
 			$id = $_SESSION['user-id'];
-			$q = "INSERT INTO temp_uploads (uploadURL,Tby) VALUES ('$videoURL','$id')";
+			$tags =$_POST['tagsSelect'];
+			$q = "INSERT INTO temp_uploads (uploadURL,Tby,tags) VALUES ('$videoURL','$id','$tags')";
 			mysqli_query($conn, $q);	
 		}else{
 			$err = 'You Selected Page link but didn\'t add a link';
@@ -77,7 +76,8 @@ if ($uploadOk == 0) {
     }
 }
 			$id = $_SESSION['user-id'];
-			$q = "INSERT INTO temp_uploads (uploadURL,Tby) VALUES ('$videoURL','$id')";
+			$tags =$_POST['tagsSelect'];
+			$q = "INSERT INTO temp_uploads (uploadURL,Tby,tags) VALUES ('$videoURL','$id','$tags')";
 			mysqli_query($conn, $q);
 
 
