@@ -1,16 +1,14 @@
 <?php
+require_once('../model/db-config.php');
 if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 	$type = $_POST['type'];
 	if($type=='vid-link'){
 		if(isset($_POST['vid-url'])){
 			$videoURL = $_POST['vid-url'];
 			//$video = file_get_contents($videoURL);
-			$q = 'INSERT INTO temp_uploads (uploadURL,Tby) VALUES(?,?)';
-			$stmt = $conn->prepare($q);
-			$stmt->bind_param("si", $videoURL,$_SESSION['user-id']);
-			$stmt->execute();
-			$stmt->close();
-			
+			$id = $_SESSION['user-id'];
+			$q = "INSERT INTO temp_uploads (uploadURL,Tby) VALUES ('$videoURL','$id')";
+			mysqli_query($conn, $q);
 		}else{
 			$err = 'You Selected Video link but didn\'t add a link';
 		}
@@ -22,12 +20,9 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 			$crawl = new Crawl($URL);
 			$videoURL = $crawl->getVideoLink();
 
-			$q = 'INSERT INTO temp_uploads (uploadURL,Tby) VALUES(?,?)';
-			$stmt = $conn->prepare($q);
-			$stmt->bind_param("si", $videoURL,$_SESSION['user-id']);
-			$stmt->execute();
-			$stmt->close();
-
+			$id = $_SESSION['user-id'];
+			$q = "INSERT INTO temp_uploads (uploadURL,Tby) VALUES ('$videoURL','$id')";
+			mysqli_query($conn, $q);	
 		}else{
 			$err = 'You Selected Page link but didn\'t add a link';
 		}
@@ -78,12 +73,9 @@ if ($uploadOk == 0) {
         $err = "Sorry, there was an error uploading your file.";
     }
 }
-			$q = 'INSERT INTO temp_uploads (uploadURL,Tby) VALUES(?,?)';
-			$stmt = $conn->prepare($q);
-			$stmt->bind_param("si", $target_file,$_SESSION['user-id']);
-			$stmt->execute();
-			$stmt->close();
-
+			$id = $_SESSION['user-id'];
+			$q = "INSERT INTO temp_uploads (uploadURL,Tby) VALUES ('$videoURL','$id')";
+			mysqli_query($conn, $q);
 
 
 
