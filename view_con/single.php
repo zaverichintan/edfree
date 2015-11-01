@@ -1,5 +1,6 @@
 <?php if(!isset($_GET['load'])){header("Location: ../index.php");} 
 require_once('../model/db-config.php');
+require_once('../model/loginfuncs.php');
 require_once('../model/funcs.php');
 ?>
 <!DOCTYPE html>
@@ -27,6 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<ul>
 					<li><a href="../index.php"><div class="hm"><i class="home1"></i><i class="home2"></i></div></a></li>
 					<li><a href="videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
+					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="/edfree/images/logout.png"/></a>';} ?>
 
 				</ul>
 			</div>

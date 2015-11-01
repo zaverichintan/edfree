@@ -7,6 +7,9 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 			$videoURL = $_POST['vid-url'];
 			//$video = file_get_contents($videoURL);
 			$id = $_SESSION['user-id'];
+			$tags =$_POST['tagsSelect'];
+			//var_dump($tags);
+			//print_r($tags);
 			$q = "INSERT INTO temp_uploads (uploadURL,Tby) VALUES ('$videoURL','$id')";
 			mysqli_query($conn, $q);
 		}else{

@@ -104,7 +104,7 @@ if (isset($_POST['file-submit'])) {
             			<input type='file' name='video' /><br/>
 
 
-            			<select class='tagsSelect' id='tagsSelect' name='tagsSelect' multiple="multiple">
+            			<select class='tagsSelect' id='tagsSelect' name='tagsSelect[]' multiple="multiple">
             				<option disabled>Select tags</option>
             				<?php
             				$q = 'SELECT * FROM tags';
