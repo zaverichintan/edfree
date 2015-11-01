@@ -19,8 +19,10 @@ class Crawl{
 			$this->videoLink = $this->url;
 		}
 	else{
+		$html = new simple_html_dom();
 
 		$this->videoLink = $this->url;
+
 		//for websites other than youtube scrap the video url
 	}
 
