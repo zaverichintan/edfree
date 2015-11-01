@@ -1,4 +1,7 @@
-<?php if(!isset($_GET['load'])){header("Location: ../index.php");} ?>
+<?php if(!isset($_GET['load'])){header("Location: ../index.php");} 
+require_once('../model/db-config.php');
+require_once('../model/funcs.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,18 +49,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="row">
 					<?php
 					$id = $_GET['load'];
-					echo'<iframe width="854" height="480" src="https://www.youtube.com/embed/'.$id.'" frameborder="0" allowfullscreen></iframe>';
+					$query = 'SELECT * FROM videos WHERE id = ' .$id ;
+					$result = mysqli_query($conn, $query);
+					$row = mysqli_fetch_assoc($result);   
+					$videoID = $row["youtube-id"];
+					echo'<iframe style="margin-right:3%;" width="60%" height="480" src="https://www.youtube.com/embed/'.$videoID.'" frameborder="0" allowfullscreen></iframe>';
 					?>
+
+					</div>
 				</div>
-			</div>
 		<div class="review-slider">
 			 <ul id="flexiselDemo1">
-			<li><img src="../images/r1.jpg" alt=""/></li>
-			<li><img src="../images/r2.jpg" alt=""/></li>
-			<li><img src="../images/r3.jpg" alt=""/></li>
-			<li><img src="../images/r4.jpg" alt=""/></li>
-			<li><img src="../images/r5.jpg" alt=""/></li>
-			<li><img src="../images/r6.jpg" alt=""/></li>
+			<?php 
+			 for($i=1; $i<6; $i++){
+			 	$imgUrl = getThumb($i);//model/loadimage.php?getThumb='.$i;//getThumb function get here
+			 	$im = getVideo($i);
+			echo '<a href="view_con/single.php?load='.$im.' " ><li><img src="'.$imgUrl.'" alt="Thumbs"/></li></a>';			 	
+			 }
+			?>
 		</ul>
 			<script type="text/javascript">
 		$(window).load(function() {

@@ -76,7 +76,7 @@ if(isset($_GET['term'])){
 			 <ul id="flexiselDemo1">
 			 <?php 
 			 for($i=1; $i<6; $i++){
-			 	$imgUrl = 'model/loadimage.php?getThumb='.$i;//getThumb function get here
+			 	$imgUrl = getThumb($i);//model/loadimage.php?getThumb='.$i;//getThumb function get here
 			 	$im = getVideo($i);
 			echo '<a href="view_con/single.php?load='.$im.' " ><li><img src="'.$imgUrl.'" alt="Thumbs"/></li></a>';			 	
 			 }
