@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p>Educating India</p>
 				</div>
 				<div class="search v-search">
-					<form>
+					<form action='../index.php'>
 						<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>
 						<input type="submit" value="">
 					</form>

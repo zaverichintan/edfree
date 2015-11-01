@@ -65,14 +65,15 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 			</div>
 			
 		</div>
-
-	</div>
-	<div class='container'>
+		<div class='container'>
 		<h2>Search Results</h2>
 
 
 
 	</div>
+
+	</div>
+
 
 
 <?php } ?>

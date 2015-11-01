@@ -18,7 +18,7 @@ html;
 }
 if(isset($_GET['term'])){
 	require_once('model/process_search.php');
-}
+}else{
 
 ?>
 
@@ -46,7 +46,7 @@ if(isset($_GET['term'])){
 				<ul>
 					<li><a class="active" href="../index.php"><i class="home"></i></a></li>
 					<li><a href="view_con/videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="/edfree/images/logout.png"/></a>';} ?>
+					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="../user/logout.php"/></a>';} ?>
 
 				</ul>
 			</div>
@@ -121,3 +121,4 @@ if(isset($_GET['term'])){
 	<div class="clearfix"></div>
 </body>
 </html>
+<?php } ?>

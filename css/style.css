@@ -109,7 +109,6 @@ a.video {
   background: #dfb636;
   font-size: 0.8em;
   text-decoration: none;
-  /*padding: 12px 25px 12px 15px;*/
   color: #fff;
   font-weight: 600;
   border-radius: 5px;
@@ -118,8 +117,8 @@ a.video {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   border-bottom: 3px solid #2d2d2d;
-  width:75%;
-  display:block;
+  
+ 
   margin-top:25px;
 }
 a.book {
@@ -1284,7 +1283,7 @@ font-weight: 700;
 	}
 	a.video,a.book {
 		font-size: 1.2em;
-		padding: 9px 22px 9px 13px;
+		    padding: 1px 0px 1px 1px;
 		width: 70%;
 		margin-top: 20px;
 	}
@@ -1388,9 +1387,8 @@ font-weight: 700;
 		font-size: 0.9em;
 	}
 	a.video, a.book {
-		font-size: 1.2em;
-		padding: 9px 22px 9px 13px;
-		width: 75%;
+		font-size: 0.8em;
+
 		margin-top: 15px;
 	}
 	p.special {

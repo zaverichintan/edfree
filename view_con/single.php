@@ -28,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<ul>
 					<li><a href="../index.php"><div class="hm"><i class="home1"></i><i class="home2"></i></div></a></li>
 					<li><a href="videos.php"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="/edfree/images/logout.png"/></a>';} ?>
+					<?php if(userIsLogged()){echo '<li><a href="/edfree/user/logout.php"><img src="../user/logout.php"/></a>';} ?>
 
 				</ul>
 			</div>
@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p>Educating India</p>
 				</div>
 				<div class="search v-search">
-					<form>
+					<form action='../index.php'>
 						<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>
 						<input type="submit" value="">
 					</form>
