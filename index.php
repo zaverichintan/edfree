@@ -107,9 +107,16 @@ if(isset($_GET['term'])){
 			});
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+
 		</div>
 
 	<div class="footer">
+		<p></p>
+<p style="text-align: center;"><span style="color: #ff9900; font-size: x-large;">Kindly help us by adding videos with suitable tags to our portal to help India get connected and developed.</span></p>
+<p style="text-align: center;"><span style="color: #ff9900; font-size: x-large;">simple 3 steps-</span></p>
+<p style="text-align: center;"><span style="color: #ff9900; font-size: x-large;">1.Login</span></p>
+<p style="text-align: center;"><span style="color: #ff9900; font-size: x-large;">2.Put link / upload video</span></p>
+<p style="text-align: center;"><span style="color: #ff9900; font-size: x-large;">3.Add suitable tags</span></p>
 		<h6>Disclaimer : </h6>
 		<p class="claim"> hack made @ InOut 2.0 <br> For educational purpose only , we made for helping out students in Rural India</p>
 		<div class="copyright">
