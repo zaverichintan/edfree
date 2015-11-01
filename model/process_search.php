@@ -65,6 +65,19 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 			</div>
 		<div class='container'>
 		<h2>Search Results</h2>
+		<?php
+		//SELECT * FROM `videos` WHERE `url` LIKE 'sdss' AND `youtube-id` LIKE 'sss'
+		$q = "SELECT * FROM 'videos' WHERE 'url LIKE '$searchTerm' OR 'youtube-id LIKE '$searchTerm' ";
+		$result = mysqli_query($conn, $q);
+		if (mysqli_num_rows($result) > 0) {
+			echo "Search Results for $searchTerm :";
+			while($row = mysqli_fetch_assoc($result)) {
+
+			}
+
+		}else{
+			echo 'NO RESULTS'
+		}
 
 
 
