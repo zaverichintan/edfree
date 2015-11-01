@@ -64,8 +64,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						echo '$value';
 					}*/
 
-
+					echo '<br/>';echo '<br/>';echo '<br/>';
 					echo $row['details'];
+					echo '<br/>';echo '<br/>';echo '<br/>';
 					?>
 
 					</div>
