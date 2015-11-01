@@ -61,17 +61,12 @@ if(isset($_GET['term'])){
 						<input type="text" name="term" placeholder="Search.."/>
 						<input type="submit" value="submit" />
 					</form>
+					<?php echo $con;?>
 				</div>
 				<div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'></div><script type='text/javascript'>setTimeout(function(){{var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location && location.href && location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=Manual&from=';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); }},0);</script>
 				<div class="clearfix"></div>
 			</div>
-			<div class="header-info">
-				<h1>Top Viewed Video</h1>
-				<p class="tags"><a href="#">Tags:</a><?php echo 'Tags will display here'; ?></p>
-				<p class="review">Views	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  <?php echo 'view-count';?></p>
-				<p class="special"></p>
-				<?php echo $con;?>
-			</div>
+			
 		</div>
 		<div class="review-slider">
 			 <ul id="flexiselDemo1">
