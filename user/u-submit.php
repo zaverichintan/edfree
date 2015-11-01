@@ -23,6 +23,7 @@ if(isset($_POST['file-submit'])&&isset($_POST['type'])){
 
 	}elseif ($type=='video') {
 		if(isset($_FILES['video'])){
+			//save uploaded video.
 
 
 
