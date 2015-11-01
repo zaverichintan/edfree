@@ -15,8 +15,7 @@ require_once('../model/funcs.php');
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Cinema Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -76,6 +75,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--//pop-up-box -->
 
 				<div class="content-grids">
+				<?php
+					for($i=0;i<6;i++){
+						$con=<<<html
 					<div class="content-grid">
 						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum1.jpg" title="allbum-name" /></a>
 						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
@@ -88,129 +90,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div id="small-dialog" class="mfp-hide">
 						<iframe  src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum2.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum3.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid last-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum4.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum5.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum6.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum7.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid last-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum8.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum9.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum10.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum11.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
-					<div class="content-grid last-grid">
-						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="../images/gridallbum1.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<ul>
-							<li><a href="#"><img src="../images/likes.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/views.png" title="image-name" /></a></li>
-							<li><a href="#"><img src="../images/link.png" title="image-name" /></a></li>
-						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Watch now</a>
-					</div>
+					</div>						
+
+html;
+
+
+							
+					}
+
+				?>
+
 					<div class="clearfix"> </div>
 					<!---start-pagenation-->
-					<div class="pagenation">
-						<ul>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">Next</a></li>
-						</ul>
-					</div>
+
 					<div class="clearfix"> </div>
 					<!---End-pagenation---->
 				</div>
